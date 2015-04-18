@@ -3,13 +3,17 @@
 <head>
   <title>LA Adventures!</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="//railsgirls.com/assets/bootstrap.css">
+  <link rel="stylesheet" href="//railsgirls.com/assets/bootstrap-theme.css">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 <h1>Your Los Angeles Bucket List...</h1>
 
-<%= yield %>
+<div class="container">
+  <%= yield %>
+</div>
 
 </body>
 </html>

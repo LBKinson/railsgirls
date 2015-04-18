@@ -1,3 +1,10 @@
+h1 {
+	color: red;
+}
+tr {
+	border-top: 5px solid #ffa700;
+}
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
