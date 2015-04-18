@@ -1,8 +1,29 @@
 h1 {
-	color: red;
+	color: blue !important;
+	font-family: 'Avenir Next', Helvetica, Arial, sans-serif !important;
 }
 tr {
 	border-top: 5px solid #ffa700;
+}
+.adventure-table {
+	font-family: 'Avenir Next', Helvetica, Arial, sans-serif;
+}
+
+
+
+body { 
+	padding-top: 60px;
+}
+footer { 
+	border-top: 5px solid gray;
+	margin-top: 100px;
+	padding-top: 50px;
+}
+table, td, th {
+	vertical-align: middle; border: none;
+}
+th {
+	border-bottom: 1px solid #DDD;
 }
 
 /*

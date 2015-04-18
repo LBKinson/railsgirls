@@ -1,32 +1,34 @@
 <p id="notice"><%= notice %></p>
 
-<h2>Your Adventures:</h2>
+<h2 class="adv">Your Adventures:</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Picture</th>
-      <th>Visit</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @adventures.each do |adventure| %>
+<div id="adventure-table">
+  <table>
+    <thead>
       <tr>
-        <td><%= adventure.name %></td>
-        <td><%= adventure.description %></td>
-        <td><%= image_tag(adventure.picture_url, :width => 150) if adventure.picture.present? %></td>
-        <td><%= adventure.visit %></td>
-        <td><%= link_to 'Show', adventure %></td>
-        <td><%= link_to 'Edit', edit_adventure_path(adventure) %></td>
-        <td><%= link_to 'Destroy', adventure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Picture</th>
+        <th>Visit</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+
+    <tbody>
+      <% @adventures.each do |adventure| %>
+        <tr>
+          <td><%= adventure.name %></td>
+          <td><%= adventure.description %></td>
+          <td><%= image_tag(adventure.picture_url, :width => 150) if adventure.picture.present? %></td>
+          <td><%= adventure.visit %></td>
+          <td><%= link_to 'Show', adventure %></td>
+          <td><%= link_to 'Edit', edit_adventure_path(adventure) %></td>
+          <td><%= link_to 'Destroy', adventure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
 
 <br>
 
