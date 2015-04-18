@@ -25,6 +25,12 @@ table, td, th {
 th {
 	border-bottom: 1px solid #DDD;
 }
+li .new {
+	background-color: red;
+}
+
+
+
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
